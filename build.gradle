@@ -1,0 +1,26 @@
+plugins {
+  id "com.github.node-gradle.node" version "7.0.0"
+}
+
+task cleanDist(type: NpxTask) {
+    command = 'rimraf'
+    args = ['./dist']
+}
+
+task compileTypeScript(type: NpxTask) {
+    dependsOn npmInstall
+    command = 'tsc'
+    inputs.files('tsconfig.json', 'tsconfig.app.json')
+    // inputs.dir('src') //TODO: perguntar ao professor em que é que esta linha seria benéfica
+    inputs.dir(fileTree("node_modules").exclude(".cache"))
+    outputs.dir('dist')
+}
+
+task build {
+  dependsOn cleanDist, compileTypeScript
+}
+
+
+
+
+
