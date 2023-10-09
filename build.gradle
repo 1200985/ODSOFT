@@ -1,5 +1,9 @@
 plugins {
-  id "com.github.node-gradle.node" version "7.0.0"
+    id "com.github.node-gradle.node" version "7.0.0"
+}
+
+node {
+    version = '12.22.12'
 }
 
 task cleanDist(type: NpxTask) {
@@ -17,7 +21,7 @@ task compileTypeScript(type: NpxTask) {
 }
 
 task build {
-  dependsOn cleanDist, compileTypeScript
+    dependsOn cleanDist, compileTypeScript
 }
 
 
