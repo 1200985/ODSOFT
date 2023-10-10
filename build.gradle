@@ -4,6 +4,7 @@ plugins {
 
 node {
     version = '12.22.12'
+    download = true
 }
 
 task cleanDist(type: NpxTask) {
