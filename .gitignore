@@ -12,3 +12,6 @@ report.html
 
 # Gradle
 .gradle
+
+#JSDoc
+jsdocs
