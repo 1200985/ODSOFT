@@ -1,0 +1,37 @@
+{
+	"tags":
+	{
+		"allowUnknownTags" : true
+	},
+	"plugins":[
+		 "plugins/markdown"
+		,"/Users/tomas_vrhzuub/AppData/Roaming/npm-cache/_npx/18816/node_modules/tsdoc/template/plugins/TSDoc.js"
+	],
+	"opts":
+	{
+		"template"	:"/Users/tomas_vrhzuub/AppData/Roaming/npm-cache/_npx/18816/node_modules/tsdoc/template",
+		"recurse"	:"true"
+	},
+	"templates" : {
+		"cleverLinks"     : false,
+		"monospaceLinks"  : false
+	},
+	"source":
+	{
+		"includePattern": "(\\.d)?\\.ts$"
+	},
+	"markdown"  : {
+		"parser"   : "gfm",
+		"hardwrap" : true
+	},
+	"tsdoc":{
+		"source"		:"/Universidade_Projetos/Mestrado/ODSOFT/ddd-forum-odsoft/src/",
+		"destination"	:"/Universidade_Projetos/Mestrado/ODSOFT/ddd-forum-odsoft/docs",
+		"tutorials"		:"",
+		"systemName"	: "ddd-forum-odsoft",
+		"footer"		: "",
+		"copyright"		: "ddd-forum-odsoft Copyright © 2023 tomas_vrhzuub.",
+		"outputSourceFiles" : true,
+		"commentsOnly": true
+	}
+}
