@@ -16,4 +16,6 @@ report.html
 #JSDoc
 /jsdocs
 
+/build
+
 test-report.html
